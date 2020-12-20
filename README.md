@@ -126,6 +126,17 @@ Coloured navbars
 </div>
 ```
 
+<link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+/>
+<div class="alert alert-info" role="alert">
+  <strong>Heads up!</strong> This alert needs your attention, but it's not super
+  important.
+</div>
+
 ```html
 <div class="alert alert-info" role="alert">
   <strong>Heads up!</strong> This alert needs your attention, but it's not super
@@ -493,7 +504,6 @@ Coloured navbars
     </tr>
   </tbody>
 </table>
-
 ```
 
 # Modals in bootstrap
