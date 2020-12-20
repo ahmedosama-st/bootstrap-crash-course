@@ -1,6 +1,6 @@
 # Bootstrap Cheatsheet 1.0.0
 
-## Made for the Bootstrap crash course by **[SecTheater](https://www.youtube.com/c/SecTheater?sub_confirmation=1)**, if you would like to watch it [click here](https://www.youtube.com/c/SecTheater?sub_confirmation=1)
+## Made for the Bootstrap crash course by **[SecTheater](https://github.com/SecTheater/)**, if you would like to watch it [click here](https://www.youtube.com/c/SecTheater?sub_confirmation=1)
 
 ### Don't forget to follow us ^^
 
@@ -977,3 +977,5 @@ $('.toast').toast();
   <div class="toast-body">Hello, world! This is a toast message.</div>
 </div>
 ```
+
+---
