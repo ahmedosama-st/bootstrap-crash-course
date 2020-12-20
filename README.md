@@ -1,6 +1,20 @@
 # Bootstrap Cheatsheet 1.0.0
 
-## Made for the Bootstrap crash course by **[SecTheater](https://www.youtube.com/c/SecTheater?sub_confirmation=1)** community, if you would like to watch it [click here](https://www.youtube.com/c/SecTheater?sub_confirmation=1)
+## Made for the Bootstrap crash course by **[SecTheater](https://www.youtube.com/c/SecTheater?sub_confirmation=1)**, if you would like to watch it [click here](https://www.youtube.com/c/SecTheater?sub_confirmation=1)
+
+### Don't forget to follow us ^^
+
+> [Facebook page](https://bit.ly/39dTot4)
+
+> [Facebook group](https://bit.ly/39c5YsH)
+
+> [Telegram channel](https://bit.ly/35Zd41Z)
+
+> [Telegram group](https://bit.ly/361mzOd)
+
+> [Discord](https://bit.ly/39c8Ohw)
+
+> [Youtube](https://bit.ly/2J3v95R)
 
 ---
 
@@ -125,17 +139,6 @@ Coloured navbars
   message.
 </div>
 ```
-
-<link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous"
-/>
-<div class="alert alert-info" role="alert">
-  <strong>Heads up!</strong> This alert needs your attention, but it's not super
-  important.
-</div>
 
 ```html
 <div class="alert alert-info" role="alert">
@@ -483,21 +486,21 @@ Coloured navbars
 # Tables in bootstrap
 
 ```html
-<table class="table">
-  <thead>
-    <tr>
+<table class="table table-bordered table-hover table-responsive">
+  <thead class="thead-dark">
+    <tr class="table-warning">
       <th>#</th>
       <th>First Name</th>
       <th>Last Name</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr class="table-success">
       <th scope="row">1</th>
       <td>Mark</td>
       <td>Otto</td>
     </tr>
-    <tr>
+    <tr class="table-primary">
       <th scope="row">2</th>
       <td>Jacob</td>
       <td>Thornton</td>
@@ -508,32 +511,469 @@ Coloured navbars
 
 # Modals in bootstrap
 
+```html
+<!-- Button trigger modal -->
+<button
+  type="button"
+  class="btn btn-primary"
+  data-toggle="modal"
+  data-target="#exampleModal"
+>
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div
+  class="modal"
+  id="exampleModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">...</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
 # Navs in bootstrap
+
+```html
+<!-- Lists also can have nav classes and drop downs -->
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#!">Active</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      data-toggle="dropdown"
+      href="#"
+      role="button"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      Dropdown</a
+    >
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#!">Action</a>
+      <a class="dropdown-item" href="#!">Another action</a>
+    </div>
+  </li>
+</ul>
+```
 
 # Texts in bootstrap
 
+```html
+<!-- Text modifications -->
+<p class="font-weight-bold">Bold text.</p>
+<p class="font-weight-light">Light text.</p>
+<p class="font-weight-normal">Normal weight text.</p>
+<p class="text-decoration-none">This text is not decorated</p>
+<p class="font-italic">Italicized text.</p>
+<p class="text-monospace">This is in monospace</p>
+<p class="text-justify">Justified text.</p>
+<p class="text-nowrap">No wrap text.</p>
+
+<!-- Aligns -->
+<p class="text-left">Left aligned text on all viewport sizes.</p>
+<p class="text-right">Right aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-lowercase">lowercased text.</p>
+<p class="text-uppercase">uppercased text.</p>
+<p class="text-capitalize">capitalized text.</p>
+<p class="text-muted">
+  Heron alap ceroau kesse elex ruta. Tauru hemed ela meliado egeb selof.
+</p>
+<p class="text-primary">
+  Heron alap ceroau kesse elex ruta. Tauru hemed ela meliado egeb selof.
+</p>
+<p class="text-success">
+  Heron alap ceroau kesse elex ruta. Tauru hemed ela meliado egeb selof.
+</p>
+<p class="text-danger">
+  Heron alap ceroau kesse elex ruta. Tauru hemed ela meliado egeb selof.
+</p>
+<p class="text-info">
+  Heron alap ceroau kesse elex ruta. Tauru hemed ela meliado egeb selof.
+</p>
+<p class="text-warning">
+  Heron alap ceroau kesse elex ruta. Tauru hemed ela meliado egeb selof.
+</p>
+<p class="text-dark">
+  Heron alap ceroau kesse elex ruta. Tauru hemed ela meliado egeb selof.
+</p>
+<p class="text-light">
+  Heron alap ceroau kesse elex ruta. Tauru hemed ela meliado egeb selof.
+</p>
+<p class="text-secondary">
+  Heron alap ceroau kesse elex ruta. Tauru hemed ela meliado egeb selof.
+</p>
+```
+
 # Colors in bootstrap
+
+```html
+<div class="bg-primary text-white">
+  Nullam id dolor id nibh ultricies vehicula ut id elit.
+</div>
+<div class="bg-secondary text-white">
+  Nullam id dolor id nibh ultricies vehicula ut id elit.
+</div>
+<div class="bg-success text-white">
+  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+</div>
+<div class="bg-info text-white">
+  Maecenas sed diam eget risus varius blandit sit amet non magna.
+</div>
+<div class="bg-warning text-white">
+  Etiam porta sem malesuada magna mollis euismod.
+</div>
+<div class="bg-danger text-white">
+  Donec ullamcorper nulla non metus auctor fringilla.
+</div>
+<div class="bg-light">Cras mattis consectetur purus sit amet fermentum.</div>
+<div class="bg-dark text-white">
+  Nullam id dolor id nibh ultricies vehicula ut id elit.
+</div>
+<div class="bg-white">
+  Nullam id dolor id nibh ultricies vehicula ut id elit.
+</div>
+```
 
 # Dropdowns in bootstrap
 
+```html
+<div class="dropdown">
+  <button
+    class="btn btn-secondary dropdown-toggle"
+    type="button"
+    id="dropdownMenu1"
+    data-toggle="dropdown"
+    aria-haspopup="true"
+    aria-expanded="false"
+  >
+    Dropdown
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <a class="dropdown-item" href="#!">Action</a>
+    <a class="dropdown-item" href="#!">Another action</a>
+  </div>
+</div>
+```
+
 # Borders in bootstrap
+
+```html
+<!-- You can apply colors here too just change primary to the color you want
+Also you can change the weight of the border and the padding -->
+<span class="p-1 border border-primary border-0">Hello World</span>
+<span class="p-2 border border-primary border-top-1">Hello World</span>
+<span class="p-3 border border-primary border-right-2">Hello World</span>
+<span class="p-4 border border-primary border-bottom-3">Hello World</span>
+<span class="p-5 border border-primary border-left-4">Hello World</span>
+```
 
 # Spacing in bootstrap
 
+```html
+<!--
+  Spacing elements in bootstrap is pretty easy
+  You just use class="m-n" for margins and replace n with numbers
+  And easily get margins all around the element
+  Also you can use class="p-n" for paddings and again, replace n with numbers
+  Thus you get paddings all around the element
+  Or use class="ml-n" to add left margin only
+  Or class="mr-n" to add right margin only
+  Or class="ml-n" to add left margin only
+  Or class="mt-n" to add top margin only
+  Or class="mb-n" to add bottom margin only
+  Or class="mx-n" to add horizontal margins only (left and right)
+  Or class="my-n" to add vertical margins only (top and bottom )
+  Or class="px-n" to add horizontal paddings only (left and right)
+  Or class="py-n" to add vertical paddings only (top and bottom)
+-->
+
+<!-- Margin classes  -->
+<div class="m-0 bg-primary">Spaced Div</div>
+<div class="mt-0 bg-primary">Spaced Div</div>
+<div class="mb-0 bg-primary">Spaced Div</div>
+<div class="ml-0 bg-primary">Spaced Div</div>
+<div class="mr-0 bg-primary">Spaced Div</div>
+<div class="mx-0 bg-primary">Spaced Div</div>
+<div class="my-0 bg-primary">Spaced Div</div>
+
+<!-- Padding classes  -->
+<div class="p-0 bg-primary">Spaced Div</div>
+<div class="pt-0 bg-primary">Spaced Div</div>
+<div class="pb-0 bg-primary">Spaced Div</div>
+<div class="pl-0 bg-primary">Spaced Div</div>
+<div class="pr-0 bg-primary">Spaced Div</div>
+<div class="px-0 bg-primary">Spaced Div</div>
+<div class="py-0 bg-primary">Spaced Div</div>
+```
+
 # Sizing in bootstrap
+
+```html
+<!--
+  Sizing elements in bootstrap is pretty straight forward
+  class="w-n" is how you size an element to have given width,
+  Similarily, class="h-n" defines the height, mh-n is maximum-height can have,
+  and mw-n is maximum-weight can have.
+-->
+
+<div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+<div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
+<div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+<div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
+
+<!-- 10 stands for 100%, similarily, 1 for 10% etc.. -->
+<img class="mw-10" src="#" alt="Max-width 100%" />
+<img class="mh-10" src="#" alt="Max-height 100%" />
+```
 
 # Positioning in bootstrap
 
+```html
+<!--
+  Aligning elements is also pretty obvious in bootstrap
+  You just specify where you would like to align this element
+  Also you can define fixed, sticky and floating elements.
+-->
+<span class="align-baseline">baseline</span>
+<span class="align-top">top</span>
+<span class="align-middle">middle</span>
+<span class="align-bottom">bottom</span>
+<span class="align-text-top">text-top</span>
+<span class="align-text-bottom">text-bottom</span>
+
+<div class="fixed-top bg-primary" style="">Fixed top</div>
+<div class="fixed-bottom bg-primary" style="">Fixed bottom</div>
+<div class="sticky-top bg-primary" style="">Sticky top</div>
+<div class="float-left">Float left on all viewport sizes</div>
+<div class="float-right">Float right on all viewport sizes</div>
+```
+
 # Button modifiers in bootstrap
+
+```html
+<!--
+  Button modifiers are literally modifying buttons to have
+  more attributes, like modifiying size to larger or smaller,
+  active or disabled status etc..
+-->
+<button type="button" class="btn btn-primary btn-lg">Large button</button>
+<button type="button" class="btn btn-primary btn-sm">Small button</button>
+<button type="button" class="btn btn-primary btn-lg btn-block">
+  Block level button
+</button>
+<a
+  href="#!"
+  class="btn btn-primary btn-lg active"
+  role="button"
+  aria-pressed="true"
+  >Primary link</a
+>
+<button type="button" class="btn btn-lg btn-primary" disabled="">
+  Disabled button
+</button>
+```
 
 # Button groups in bootstrap
 
+```html
+<!--
+  Button groups are classes to support addons to buttons
+  like adding font-awesome icons next to buttons or grouping
+  multiple buttons together
+  and you can apply button modifiers to it too.
+-->
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary">Left</button>
+  <button type="button" class="btn btn-secondary">Middle</button>
+  <button type="button" class="btn btn-secondary">Right</button>
+</div>
+```
+
 # Forms in bootstrap
+
+```html
+<!--
+  Forms in bootstrap can be inlined or grouped
+  also modifiers can be applied to inputs.
+-->
+
+<!-- Grouped form -->
+<form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Example label</label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput"
+      placeholder="Example input"
+    />
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Another label</label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput2"
+      placeholder="Another input"
+    />
+  </div>
+</form>
+
+<!-- Inline form with font-awesome addon to input -->
+<form class="form-inline">
+  <label class="sr-only" for="inlineFormInputName2">Name</label>
+  <input
+    type="text"
+    class="form-control mb-2 mr-sm-2"
+    id="inlineFormInputName2"
+    placeholder="Jane Doe"
+  />
+
+  <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+  <div class="input-group mb-2 mr-sm-2">
+    <div class="input-group-prepend">
+      <div class="input-group-text">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </div>
+    </div>
+    <input
+      type="text"
+      class="form-control"
+      id="inlineFormInputGroupUsername2"
+      placeholder="Username"
+    />
+  </div>
+
+  <button type="submit" class="btn btn-primary mb-2">Submit</button>
+</form>
+```
 
 # Displays in bootstrap
 
+```html
+<!--
+  Displaying elements in bootstrap is easy as typing d-block, d-flex etc..
+-->
+<span class="d-block bg-primary">d-block</span>
+<div class="d-flex bg-primary">d-flex</div>
+<div class="d-inline bg-primary">d-inline</div>
+<div class="d-inline-block bg-primary">d-inline-block</div>
+<div class="d-inline-flex bg-primary">d-inline-flex</div>
+<div class="d-none">d-none"&gt;This</div>
+```
+
 # Pagination in bootstrap
+
+```html
+<!-- Pagination elements can have also active, disabled, sm and lg modifiers -->
+<nav aria-label="...">
+  <ul class="pagination pagination-lg">
+    <li class="page-item disabled">
+      <a class="page-link" href="#!" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#!">1</a></li>
+    <li class="page-item active">
+      <a class="page-link" href="#!"
+        >2 <span class="sr-only">(current)</span></a
+      >
+    </li>
+    <li class="page-item"><a class="page-link" href="#!">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#!">Next</a>
+    </li>
+  </ul>
+</nav>
+```
 
 # Form input group in bootstrap
 
+```html
+<!--
+  Form-input groups is simply adding addons to input as we saw previously
+  you can add left addon, right addon, dropdowns and even other inputs addons to your input
+-->
+
+<div class="input-group">
+  <div class="input-group-prepend">
+    <button
+      class="btn btn-primary dropdown-toggle"
+      type="button"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      Dropdown
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+    </div>
+  </div>
+  <input
+    type="text"
+    class="form-control"
+    aria-label="Text input with dropdown button"
+  />
+</div>
+```
+
 # Toasts in bootstrap
+
+```html
+<!--
+  Toasts is simply a flash message like a notification
+  and it's dismissble
+-->
+<!-- Note a custom script is used to activate toasts:
+$('.toast').toast();
+-->
+
+<div
+  class="toast fade show"
+  role="alert"
+  aria-live="assertive"
+  aria-atomic="true"
+>
+  <div class="toast-header">
+    <strong class="mr-auto">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button
+      type="button"
+      class="ml-2 mb-1 close"
+      data-dismiss="toast"
+      aria-label="Close"
+    >
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="toast-body">Hello, world! This is a toast message.</div>
+</div>
+```
