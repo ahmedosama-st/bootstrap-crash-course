@@ -1,6 +1,6 @@
 # Bootstrap Cheatsheet 1.0.0
 
-## Made for the Bootstrap crash course by **[SecTheater](https://github.com/SecTheater/)**, if you would like to watch it [click here](https://www.youtube.com/c/SecTheater?sub_confirmation=1)
+## Made by **[SecTheater](https://github.com/SecTheater/)**
 
 ### Don't forget to follow us ^^
 
